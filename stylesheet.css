@@ -1,0 +1,182 @@
+a{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  display:flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size:36px;
+  padding-top:36px;
+  padding-bottom:36px;
+  justify-content:center;
+}
+.header:after{
+  display:flex;
+  content:'';
+  border-bottom: solid 5px #A2E3AA;
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:300;
+  font-size:36px;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:600;
+  font-size:56px;
+}
+h4{
+  font-family: 'Montserrat,' sans-serif;
+  font-weight:600;
+  font-size:40px;
+  transition: font-size 0.1s;
+  text-shadow: 0px 4px 4px black;
+}
+.carousel-caption{
+  top:50%;
+  transform:translateY(-50%);
+  bottom:auto;
+  color:white;
+}
+
+.carousel:hover h4{
+  font-size:45px;
+}
+
+nav {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size:18px;
+}
+
+#carouselExampleIndicators{
+  margin-top:20px;
+  margin-bottom:50px;
+}
+
+#carouselProjectIndicators{
+  margin-top:36px;
+  margin-bottom:20px;
+}
+
+#home-video{
+    background-color:#E2E2E2;
+}
+
+#my-pic{
+  margin-bottom: 36px;
+  margin-top:3px;
+}
+
+.btn {
+  background-color: #A2E3AA;
+  border:0px;
+  color:black;
+  border-radius:10px;
+  box-shadow: 0px 6px 8px;
+  font-weight:700;
+}
+
+.btn:hover{
+  background-color: #59B865;
+  box-shadow: 0px 2px 4px;
+  color:black;
+}
+
+.copyright{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.fa{
+  color:black;
+  transition: color 0.2s;
+}
+.fa:hover{
+  color:#A2E3AA;
+}
+
+.footer{
+  background-color:#F3F0F0;
+  border-top: 2px solid #979797;
+  border-bottom: 2px solid #979797;
+  margin-top:10px;
+  padding-top:36px;
+  padding-bottom:20px;
+}
+
+.my-links{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-headings{
+    font-size:24px;
+}
+
+#home-video{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+
+#messageContainer{
+  animation-name: wiggle;
+  animation-duration: 1500ms;
+  animation-delay: 1500ms;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes wiggle {
+  20% {transform: rotate(0deg);}
+  25% {transform: rotate(-10deg);}
+  30% {transform: rotate(10deg);}
+  35% {transform: rotate(0deg);}
+}
+
+#next-button{
+  margin-bottom:36px;
+}
+#resume-row{
+  margin-top:36px;
+  margin-bottom:36px;
+}
+
+#trailer{
+  margin-top:20px;
+  margin-bottom:36px;
+}
+
+@media (max-width: 767px) {
+    #resume-button {
+        margin-bottom:36px;
+    }
+    h2 {
+      font-size:26px;
+    }
+    h3 {
+      font-size:36px;
+    }
+    p{
+      font-size:16px;
+    }
+    h4{
+      font-size:25px;
+      transition: font-size 0.1s;
+    }
+    .carousel:hover h4{
+      font-size:30px;
+    }
+}

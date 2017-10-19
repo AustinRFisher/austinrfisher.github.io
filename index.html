@@ -5,20 +5,206 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Fonts -->
+    <script src="https://use.fontawesome.com/285f09f11e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Raleway:400i,500,700" rel="stylesheet">
+
+    <!-- Bootstrap & Animate CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+
+    <!-- Word Modification -->
+    <script type="text/javascript">
+
+    	var delay = 1500; //delay between messages in milliseconds
+    	var currentMessage = 1; //whats the currentlly displayed message index?
+    	var messages = new Array(); //array containing all of the messages
+    	messages[0] = 'WRITER';
+    	messages[1] = 'EDITOR';
+    	messages[2] = 'UX DESIGNER';
+    	messages[3] = 'SOCIAL MARKETER';
+      messages[4] = 'AUDIO PRODUCER';
+      messages[5] = 'ANIMATOR';
+      messages[6] = 'SUPER SMASH PLAYER';
+    	/**
+    	* Does all the hard work making the message switch.
+    	*/
+    	function switchMessage(){
+    		if(currentMessage == messages.length){
+    			currentMessage = 0;
+    		}
+    		document.getElementById("messageContainer").innerHTML = messages[currentMessage++];
+    	}
+
+    	window.onload = function(){
+    		setInterval(switchMessage, delay);	//setting a repeating interval instead of a timeout
+    	};
+
+    </script>
+
   </head>
   <body>
     <nav class="navbar navbar-light bg-light justify-content-between">
-      <a class="navbar-brand">Austin Fisher</a>
+      <a href="#" class="navbar-brand">Austin Fisher</a>
     </nav>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
-          <h1 class="text-center">Hi, I'm Austin</h1>
-        </div>
+    <!--Top Video-->
+    <div id="home-video" class="container-fluid text-center">
+      <div class="container">
+        <h2 id="home-top" class="animated bounceInLeft">IF YOU'RE SEARCHING FOR A PROFESSIONAL</h2>
+          <h3 id="messageContainer"><span class="animated zoomIn">WRITER</span></h3>
+        <h2 id="home-bottom" class="animated bounceInRight">YOU'VE COME TO THE RIGHT PLACE.</h2>
       </div>
     </div>
+    <!--Main Content-->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="container">
+          <h1 class="text-center"><span class="header">Hi, I'm Austin</span></h1>
+        </div>
+        <div class="col-12 col-md-10 col-lg-9">
+          <p>I’m a <strong>Storyteller</strong>. I blend together Writing, UX Design, and Social Marketing to create intuitive, user-friendly experiences.   <strong>Know thy users.</strong></br></br>
+            I graduated with a Bachelor of Global Business and Digital Arts at UWaterloo, from a unique program dedicated to innovation, digital experiences, and user-centric design.</br></br>
+            I received an official Social Marketing certification through Hootsuite.</br></br>
+            I write professionally on Medium about design, and tech. One story about Snapchat went viral.</br></br>
+            <strong>I can take digital ideas from conception to completion — every step of the way.</strong>
+        </div>
+        <div class="container">
+          <h1 class="text-center"><span class="header">Portfolio</span></h1>
+        </div>
+        <div class="col-12 col-md-10 col-lg-9 text-center">
+          <p class="portfolio-headings"><strong><u>TECHNICAL SKILLS</u></strong></p>
+        </div>
+
+        <!-- Carousel of Pages -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/writing-cover.jpg" alt="First slide">
+                <h4 class="carousel-caption">WRITING</h4>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/ux-traces-2.JPG" alt="Second slide">
+                <h4 class="carousel-caption">UX DESIGN</h4>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/guitar-dark-edit.jpg" alt="Third slide">
+                <h4 class="carousel-caption">MUSIC</h4>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/animation-still.png" alt="Third slide">
+                <h4 class="carousel-caption">ANIMATION</h4>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-10 col-lg-9 text-center" >
+            <p class="portfolio-headings"><strong><u>INDUSTRY PROJECTS</u></strong></p>
+          </div>
+          <!-- Carousel of Pages -->
+            <div id="carouselProjectIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselProjectIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselProjectIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselProjectIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselProjectIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="images/waterloo-logo-2.jpg" alt="UX Internship Image Link">
+                  <h4 class="carousel-caption">UX DESIGN INTERNSHIP</h4>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/emerge-cover.jpg" alt="Emerge Project Image Link">
+                  <h4 class="carousel-caption">EMERGE: Art Installation</h4>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/seize-the-data.jpg" alt="Seize the Data Project Image Link">
+                  <h4 class="carousel-caption">SEIZE THE DATA: Educational Game</h4>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/quickclick3d-header-2.jpg" alt="Quick Click Project Image Link">
+                  <h4 class="carousel-caption">QUICK CLICK: Iterative Process</h4>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselProjectIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselProjectIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+            <div class="container">
+              <h1 class="text-center" style="margin-top:20px"><span class="header">About Me</span></h1>
+            </div>
+
+            <div class="col-10 col-md-6 col-lg-3" style="display:flex; align-items:center;">
+              <img id="my-pic" class="img-fluid" src="images/me-square.jpg">
+            </div>
+
+            <div class="col-12 col-md-10 col-lg-9">
+              <p>I’ve been writing ever since I was 11 years old.</br></br>
+                Since then, I’ve created scripts for movies, TV shows, stage plays, and commercials. I’ve written a couple short stories, with many more on the go. I began blogging on Medium around 1 year ago.</br></br>
+                I enjoy performing music, reading Stephen King, and conquering my rivals in Super Smash Bros.</br> My main is Shulk.</br></br>
+                If you want to challenge me, or just want to chat over coffee (a less threathening option), you can contact me in these lovely places below.</p>
+            </div>
+
+            <div id="resume-row" class="row col-12 justify-content-center">
+              <div id="resume-button" class="col-12 col-md-6 col-lg-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block">VIEW MY RESUME</button>
+              </div>
+              <div class="col-2 col-md-1 text-center my-links" >
+                <a href="#"><i class="fa fa-2x fa-medium fa-fw" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-2 col-md-1 text-center my-links">
+                <a href="#"><i class="fa fa-2x fa-linkedin fa-fw" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-2 col-md-1 text-center my-links">
+                <a href="#"><i class="fa fa-2x fa-twitter fa-fw" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-2 col-md-1 text-center my-links">
+                <a href="#"><i class="fa fa-2x fa-envelope fa-fw" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+            <div class="container">
+              <h1 class="text-center"><span class="header">My Animated Trailer</span></h1>
+            </div>
+            <div id="trailer" class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            </div>
+
+            <div id="next-button" class="col-8 col-md-6 col-lg-4">
+              <button type="button" class="btn btn-primary btn-lg btn-block">NEXT: Writing</button>
+            </div>
+    </div>
+  </div>
+
+  <div class="container-fluid footer text-center">
+    <p>Want to get in touch right now? Email me here or connect on LinkedIn here.</p>
+  </div>
+
+  <div class="container copyright text-center">
+    <p>© Austin Fisher 2017</p>
+  </div>
 
 
     <!-- Optional JavaScript -->
