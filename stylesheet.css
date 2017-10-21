@@ -1,5 +1,46 @@
 a{
   font-family: 'Montserrat', sans-serif;
+  color:inherit;
+  text-decoration: underline;
+}
+nav a{
+  text-decoration: none;
+}
+nav a:hover{
+  color:inherit;
+}
+
+button a{
+  text-decoration: none;
+  font-weight:600;
+}
+button a:hover{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+.card-anchor{
+  text-decoration: none;
+  color:inherit;
+}
+.card-anchor:hover{
+  text-decoration: none;
+  color:inherit;
+}
+
+.card{
+  box-shadow: 0px 4px 6px;
+  transition: box-shadow 0.2s;
+  min-height: 300px;
+  margin-bottom: 36px;
+}
+.card:hover{
+  box-shadow: 0px 2px 2px;
+}
+
+.card-img-top{
+
 }
 
 h1 {
@@ -7,15 +48,14 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size:36px;
-  padding-top:36px;
-  padding-bottom:36px;
+  margin-top:36px;
+  margin-bottom:36px;
   justify-content:center;
 }
 .header:after{
   display:flex;
   content:'';
   border-bottom: solid 5px #A2E3AA;
-
 }
 
 h2 {
@@ -32,11 +72,12 @@ h3 {
 }
 h4{
   font-family: 'Montserrat,' sans-serif;
-  font-weight:600;
+  font-weight:400;
   font-size:40px;
   transition: font-size 0.1s;
   text-shadow: 0px 4px 4px black;
 }
+
 .carousel-caption{
   top:50%;
   transform:translateY(-50%);
@@ -45,18 +86,36 @@ h4{
 }
 
 .carousel:hover h4{
-  font-size:45px;
+  font-size:44px;
+}
+
+iframe{
+  margin-top:30px;
+}
+
+h5 {
+  font-family: 'Montserrat,' sans-serif;
+  font-weight:600;
+  font-size:20px;
+  padding: 10px 10px 0px 10px;
+}
+.card-text{
+  padding: 0px 10px 20px 10px;
 }
 
 nav {
   margin-left:10px;
   margin-right:10px;
+  background-color: #F0F0F0;
 }
 
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size:18px;
+}
+.card-text {
+  font-size: 14px;
 }
 
 #carouselExampleIndicators{
@@ -77,6 +136,7 @@ p {
   margin-bottom: 36px;
   margin-top:3px;
 }
+
 
 .btn {
   background-color: #A2E3AA;
@@ -125,6 +185,33 @@ p {
     font-size:24px;
 }
 
+.proj-header{
+  max-height: 400px;
+  overflow:hidden;
+}
+
+.triple-card{
+  margin-top: 36px;
+}
+
+#podcast-title{
+  margin-top:16px;
+}
+.podcast{
+  height:100%;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.2s ease;
+}
+.podcast:hover{
+  transform:scale(1.2);
+}
+
+.podcasts{
+  margin-top:36px;
+  margin-bottom: 36px;
+}
+
 #home-video{
   padding-top:60px;
   padding-bottom:60px;
@@ -146,7 +233,8 @@ p {
   35% {transform: rotate(0deg);}
 }
 
-#next-button{
+.next-button{
+  margin-top:36px;
   margin-bottom:36px;
 }
 #resume-row{
@@ -154,15 +242,11 @@ p {
   margin-bottom:36px;
 }
 
-#trailer{
-  margin-top:20px;
-  margin-bottom:36px;
-}
-
 @media (max-width: 767px) {
     #resume-button {
         margin-bottom:36px;
     }
+
     h2 {
       font-size:26px;
     }
@@ -178,5 +262,12 @@ p {
     }
     .carousel:hover h4{
       font-size:30px;
+    }
+    #home-video{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .card{
+      min-height: 0px;
     }
 }
