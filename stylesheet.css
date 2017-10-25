@@ -9,6 +9,10 @@ nav a{
 nav a:hover{
   color:inherit;
 }
+p a{
+  text-decoration: underline;
+  font-weight: 400;
+}
 
 button a{
   text-decoration: none;
@@ -18,7 +22,6 @@ button a:hover{
   text-decoration: none;
   color:inherit;
 }
-
 
 .card-anchor{
   text-decoration: none;
@@ -37,6 +40,14 @@ button a:hover{
 }
 .card:hover{
   box-shadow: 0px 2px 2px;
+}
+
+.no-shadow{
+  box-shadow:none;
+}
+.no-shadow:hover{
+  box-shadow:none;
+
 }
 
 .card-img-top{
@@ -73,7 +84,7 @@ h3 {
 h4{
   font-family: 'Montserrat,' sans-serif;
   font-weight:400;
-  font-size:40px;
+  font-size:38px;
   transition: font-size 0.1s;
   text-shadow: 0px 4px 4px black;
 }
@@ -99,6 +110,19 @@ h5 {
   font-size:20px;
   padding: 10px 10px 0px 10px;
 }
+
+li{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size:18px;
+  margin: 5px 0px 5px 0px;
+}
+ul{
+  margin: 30px 0px 30px 0px;
+}
+ol{
+  margin-top: 30px;
+}
 .card-text{
   padding: 0px 10px 20px 10px;
 }
@@ -114,6 +138,15 @@ p {
   font-weight: 500;
   font-size:18px;
 }
+.quote-text{
+  color:#5B5B5B;
+  font-size:16px;
+}
+.quote-box{
+  border-left:#A2E3AA solid 10px;
+  margin:36px 5px 36px 5px;
+}
+
 .card-text {
   font-size: 14px;
 }
@@ -186,13 +219,30 @@ p {
 }
 
 .proj-header{
-  max-height: 400px;
+  max-height: 500px;
   overflow:hidden;
+  align-items: center;
 }
-
+.img-fluid{
+  width:100%;
+  align-items: center;
+}
+#img-break{
+  margin-bottom: 36px;
+}
+.img-trio{
+  box-shadow: 0px 4px 4px;
+}
+.gif-trio{
+  margin-top:36px;
+}
 .triple-card{
   margin-top: 36px;
 }
+.triple-img{
+  margin-top:30px;
+}
+
 
 #podcast-title{
   margin-top:16px;
@@ -246,6 +296,12 @@ p {
     #resume-button {
         margin-bottom:36px;
     }
+    button a{
+      font-size: 16px;
+    }
+    h1{
+      font-size:30px;
+    }
 
     h2 {
       font-size:26px;
@@ -255,6 +311,9 @@ p {
     }
     p{
       font-size:16px;
+    }
+    li{
+      font-size: 16px;
     }
     h4{
       font-size:25px;
@@ -269,5 +328,14 @@ p {
     }
     .card{
       min-height: 0px;
+    }
+    .img-trio{
+      margin-bottom:20px;
+    }
+    #emerge-vid{
+      height:250px;
+    }
+    .quote-text{
+      font-size:14px;
     }
 }
