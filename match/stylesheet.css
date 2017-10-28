@@ -1,0 +1,41 @@
+
+#comingSoon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+
+}
+
+#comingSoon2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+ }
+
+#container{
+  justify-content: center;
+  vertical-align: middle;
+}
+
+#name{
+
+
+  position: absolute;
+      top: 40%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      width:80%;
+
+}
+
+#soon{
+  position:absolute;
+      top: 70%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      width:30%;
+}

@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=LbW08x74aN">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=LbW08x74aN">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=LbW08x74aN">
+    <link rel="manifest" href="/manifest.json?v=LbW08x74aN">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=LbW08x74aN" color="#5eb569">
+    <link rel="shortcut icon" href="/favicon.ico?v=LbW08x74aN">
+    <meta name="theme-color" content="#f2f2f2">
+
     <!-- Word Modification -->
     <script type="text/javascript">
 
@@ -34,27 +43,75 @@
     		if(currentMessage == messages.length){
     			currentMessage = 0;
     		}
-    		document.getElementById("messageContainer").innerHTML = messages[currentMessage++];
+
+        var slogan = document.createElement("div");
+        slogan.className = "slogan";
+        slogan.innerHTML = messages[currentMessage++];
+
+        var messageContainer = document.getElementById("messageContainer");
+        messageContainer.innerHTML = "";
+    		messageContainer.appendChild(slogan);
     	}
 
     	window.onload = function(){
-
     		setInterval(switchMessage, delay);	//setting a repeating interval instead of a timeout
+
     	};
 
     </script>
   </head>
 
   <body>
-    <nav class="container-fluid navbar justify-content-between">
-      <a href="#" class="navbar-brand">Austin Fisher</a>
-    </nav>
+<nav class="container-fluid navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img src="images/signature-logo-thick.png" class="d-inline-block align-top logo">Austin Fisher</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="navbar-text nav-item">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="navbar-text nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Skills
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <a class="dropdown-item" href="writing.html">Writing</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="uxdesign.html">UX Design</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="music.html">Music</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="animation.html">Animation</a>
+        </div>
+      </li>
+      <li class="navbar-text nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Industry Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+          <a class="dropdown-item" href="internship.html">Design Internship</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="emerge.html">Emerge</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="seize-data.html">Seize the Data</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="quick-click.html">Quick Click</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
     <!--Top Video-->
     <div id="home-video" class="container-fluid text-center">
       <div class="container">
         <h2 id="home-top" class="animated bounceInLeft">IF YOU'RE SEARCHING FOR A PROFESSIONAL</h2>
+        <div id="expand">
           <h3 id="messageContainer"><span class="animated zoomIn">WRITER</span></h3>
+        </div>
         <h2 id="home-bottom" class="animated bounceInRight">YOU'VE COME TO THE RIGHT PLACE.</h2>
       </div>
     </div>
@@ -186,7 +243,7 @@
 
               <div id="resume-row" class="row col-12 justify-content-center">
                 <div id="resume-button" class="col-12 col-md-6 col-lg-4">
-                  <button type="button" class="btn btn-primary btn-lg btn-block">VIEW MY RESUME</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"><a class="card-anchor" target="_blank" href="Austin-Fisher-resume.pdf">VIEW MY RESUME</a></button>
                 </div>
                 <div class="col-2 col-md-1 text-center my-links" >
                   <a target="_blank" href="https://medium.com/@AustinRFisher"><i class="fa fa-2x fa-medium fa-fw" aria-hidden="true"></i></a>
@@ -213,7 +270,7 @@
               </div>
 
               <div class="col-8 col-md-6 col-lg-4 next-button">
-                <button type="button" class="btn btn-primary btn-lg btn-block"><a href="writing.html">NEXT: Writing</a></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block margin-fix"><a href="writing.html">NEXT: Writing</a></button>
               </div>
       </div>
     </div>

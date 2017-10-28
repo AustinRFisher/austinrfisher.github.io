@@ -13,10 +13,59 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=LbW08x74aN">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=LbW08x74aN">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=LbW08x74aN">
+    <link rel="manifest" href="/manifest.json?v=LbW08x74aN">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=LbW08x74aN" color="#5eb569">
+    <link rel="shortcut icon" href="/favicon.ico?v=LbW08x74aN">
+    <meta name="theme-color" content="#f2f2f2">
+    
   </head>
   <body>
-    <nav class="container-fluid navbar justify-content-between">
-      <a href="index.html" class="navbar-brand">Austin Fisher</a>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="images/signature-logo-thick.png" class="d-inline-block align-top logo">Austin Fisher</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="navbar-text nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="navbar-text nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Skills
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="writing.html">Writing</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="uxdesign.html">UX Design</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="music.html">Music</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="animation.html">Animation</a>
+            </div>
+          </li>
+          <li class="navbar-text nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Industry Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="internship.html">Design Internship</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="emerge.html">Emerge</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="seize-data.html">Seize the Data</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="quick-click.html">Quick Click</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container">
       <div class="row justify-content-center">
@@ -41,7 +90,7 @@
       </p>
     </div>
     <div class="container">
-      <h1 class="text-center"><span class="header">DESIGN INTERNSHIP</span></h1>
+      <h1 class="text-center margin-fix"><span class="header">DESIGN INTERNSHIP</span></h1>
     </div>
     <div class="col-12 col-md-10 col-lg-9">
       <img id="img-break" class="d-block w-100" src="images/waterloo-logo.jpg">
@@ -61,13 +110,15 @@
       </p>
       <div class="row justify-content-center">
         <div class="col-10">
-        <div class="card">
+      <a class="card-anchor" target="_blank" href="usability-testing-report.pdf">
+        <div class="card card-report">
           <img class="card-img-top" src="images/intern-data.png" alt="Card image cap">
           <div class="card-block">
             <h5 class="card-title">User Testing Summary Report</h5>
             <p class="card-text">A breakdown of the testing performed, and the methodology behind the actionable conclusions.</p>
           </div>
         </div>
+      </a>
       </div>
       </div>
       <p>This user test was conducted with 9 people, internally and externally. It supplied conclusive evidence that most areas of concern with the IAP website needed modification. My internship ended before I could implement the changes, unfortunately.
@@ -75,7 +126,7 @@
     </div>
 
     <div class="container">
-      <h1 class="text-center"><span class="header">A/B TESTING</span></h1>
+      <h1 class="text-center margin-fix"><span class="header">A/B TESTING</span></h1>
     </div>
     <div class="col-12 col-md-10 col-lg-9">
       <p>I conducted multiple iterations of A/B testing on one of my industry projects through GBDA called <a href="emerge.html">Emerge</a>. The goal was to determine if it was better to have obvious or discrete sensors for an art installation. A/B testing determined that while labelled sensors were beneficial to learning, discrete sensors were better for discovery.</br></br>
@@ -112,7 +163,7 @@
       </div>
     </div>
     <div class="col-8 col-md-6 col-lg-4 next-button">
-      <button type="button" class="btn btn-primary btn-lg btn-block"><a href="music.html">NEXT: Music</a></button>
+      <button type="button" class="btn btn-primary btn-lg btn-block margin-fix"><a href="music.html">NEXT: Music</a></button>
     </div>
   </div>
 </div>

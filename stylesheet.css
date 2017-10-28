@@ -41,16 +41,14 @@ button a:hover{
 .card:hover{
   box-shadow: 0px 2px 2px;
 }
-
+.card-report{
+  margin-top:20px;
+}
 .no-shadow{
   box-shadow:none;
 }
 .no-shadow:hover{
   box-shadow:none;
-
-}
-
-.card-img-top{
 
 }
 
@@ -115,9 +113,15 @@ li{
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size:18px;
+}
+
+li:not(.nav-item){
   margin: 5px 0px 5px 0px;
 }
-ul{
+.nav-item{
+  margin-top:4px;
+}
+ul:not(.navbar-nav){
   margin: 30px 0px 30px 0px;
 }
 ol{
@@ -150,6 +154,10 @@ p {
   border-left:#A2E3AA solid 10px;
   margin:36px 5px 36px 5px;
 }
+#confidential-notice{
+  margin-top:20px;
+}
+
 
 .card-text {
   font-size: 14px;
@@ -211,7 +219,12 @@ p {
   padding-top:36px;
   padding-bottom:20px;
 }
-
+#game-link{
+  margin-bottom:10px;
+}
+.margin-fix{
+  margin-top: 15px;
+}
 .my-links{
   display:flex;
   justify-content: center;
@@ -271,28 +284,34 @@ p {
   padding-bottom:60px;
 }
 
-#messageContainer{
+.slogan{
   animation-name: wiggle;
-  animation-duration: 1500ms;
-  animation-delay: 1500ms;
+  animation-duration: 300ms;
   transform-origin: 50% 50%;
-  animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 @keyframes wiggle {
-  20% {transform: rotate(0deg);}
+  0% {transform: rotate(0deg);}
   25% {transform: rotate(-10deg);}
-  30% {transform: rotate(10deg);}
-  35% {transform: rotate(0deg);}
+  50% {transform: rotate(10deg);}
+  75% {transform: rotate(0deg);}
 }
 
 .next-button{
-  margin-top:36px;
+  margin-top:24px;
   margin-bottom:36px;
 }
 #resume-row{
   margin-top:36px;
   margin-bottom:36px;
+}
+.justify-content-end{
+  margin-right:10px;
+}
+.logo{
+  width:30px;
+  height:30px;
+  margin-right:10px;
 }
 
 @media (max-width: 767px) {
@@ -303,7 +322,7 @@ p {
       font-size: 16px;
     }
     h1{
-      font-size:30px;
+      font-size:26px;
     }
 
     h2 {
@@ -320,10 +339,9 @@ p {
     }
     h4{
       font-size:25px;
-      transition: font-size 0.1s;
     }
     .carousel:hover h4{
-      font-size:30px;
+      font-size:25px;
     }
     #home-video{
       padding-top: 30px;
@@ -344,4 +362,11 @@ p {
     .quote-important{
       font-size:16px;
     }
+
+
+}
+@media (max-width:420px){
+  h3{
+    height:70px;
+  }
 }

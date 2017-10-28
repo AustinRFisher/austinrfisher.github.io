@@ -13,10 +13,59 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=LbW08x74aN">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=LbW08x74aN">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=LbW08x74aN">
+    <link rel="manifest" href="/manifest.json?v=LbW08x74aN">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=LbW08x74aN" color="#5eb569">
+    <link rel="shortcut icon" href="/favicon.ico?v=LbW08x74aN">
+    <meta name="theme-color" content="#f2f2f2">
+    
   </head>
   <body>
-    <nav class="container-fluid navbar justify-content-between">
-      <a href="index.html" class="navbar-brand">Austin Fisher</a>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="images/signature-logo-thick.png" class="d-inline-block align-top logo">Austin Fisher</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="navbar-text nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="navbar-text nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Skills
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="writing.html">Writing</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="uxdesign.html">UX Design</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="music.html">Music</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="animation.html">Animation</a>
+            </div>
+          </li>
+          <li class="navbar-text nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Industry Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="internship.html">Design Internship</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="emerge.html">Emerge</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="seize-data.html">Seize the Data</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="quick-click.html">Quick Click</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container">
       <div class="row justify-content-center">
@@ -45,7 +94,7 @@
           </p>
         </div>
         <div class="container">
-          <h1 class="text-center"><span class="header">UX RESEARCH</span></h1>
+          <h1 class="text-center margin-fix"><span class="header">UX RESEARCH</span></h1>
         </div>
         <div class="col-12 col-md-10 col-lg-9">
           <p>My group travelled to different hospitals, researching their waiting rooms to determine what could be improved about them. Considering the sensitivity of hospital-goers, we chose not to interview any visitors.</br></br>
@@ -86,7 +135,7 @@
           </p>
         </div>
         <div class="container">
-          <h1 class="text-center"><span class="header">USER TESTING</span></h1>
+          <h1 class="text-center margin-fix"><span class="header">USER TESTING</span></h1>
         </div>
         <div class="col-12 col-md-10 col-lg-9">
           <p>From chairs to side tables, projections to floors, all aspects of the emergency room were considered when creating the interactive experience. It could not take up additional space unless it was very small, so it needed to be <strong>a part of existing architecture</strong>.</br></br>
@@ -94,11 +143,16 @@
         </p>
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8">
-              <img class="img-fluid" src="images/ideal-landscape.jpg">
+              <div class="card no-shadow">
+                <img class="card-img-top" src="images/ideal-landscape.jpg">
+                <div class="card-block">
+                  <h5 class="card-title">Ideal Landscape</h5>
+                </div>
+              </div>
             </div>
           </div>
         <p>
-        </br></br><strong>Our idea:</strong> Activating various pressure sensors on a chair would adjust an ideal landscape on the room’s TV. These changes could be a fish jumping in a pond, or seasons changing. Our first round of testing determined if it was better to have <strong>labelled or unlabelled sensors</strong>.
+        <strong>Our idea:</strong> Activating various pressure sensors on a chair would adjust an ideal landscape on the room’s TV. These changes could be a fish jumping in a pond, or seasons changing. Our first round of testing determined if it was better to have <strong>labelled or unlabelled sensors</strong>.
         </p>
         </div>
         <div class="row justify-content-center col-12">
@@ -145,7 +199,7 @@
           </div>
         </div>
         <div class="container">
-          <h1 class="text-center"><span class="header">THE FINAL PRODUCT</span></h1>
+          <h1 class="text-center margin-fix"><span class="header">THE FINAL PRODUCT</span></h1>
         </div>
         <div class="col-12 col-md-10 col-lg-9">
           <p>The name Emerge was inspired by the product being made for emergency rooms, and how elements of the scene appeared and disappeared as though emerging from the background.</br></br>
