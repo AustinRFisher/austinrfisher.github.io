@@ -210,6 +210,9 @@ p {
 .fa:hover{
   color:#A2E3AA;
 }
+.seize-trio{
+  height:450px;
+}
 
 .footer{
   background-color:#F3F0F0;
@@ -361,6 +364,9 @@ p {
     }
     .quote-important{
       font-size:16px;
+    }
+    .seize-trio{
+      height:380px;
     }
 
 
