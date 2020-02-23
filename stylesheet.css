@@ -164,11 +164,11 @@ margin-top: 36px;;
 .design-text{
   color:#F4976C;
 }
-#email-button{
+#linkedin-button{
   background-color:rgba(244,151,108,0.1);
 }
-#email-button:hover,
-#email-button:focus{
+#linkedin-button:hover,
+#linkedin-button:focus{
   background-color:rgba(244,151,108,0.3);
 }
 #expand{
@@ -325,7 +325,14 @@ margin-top: 36px;;
       margin-bottom:36px;
     }
 
+
 }
 @media (max-width:767px) {
+#resume-button{
+  font-size: 13px;
+}
+#linkedin-button{
+  font-size: 13px;
+}
 
 }
